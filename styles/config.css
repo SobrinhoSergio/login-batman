@@ -1,0 +1,56 @@
+/*===============RESET================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-panel: #191919;
+    --color-text: #fff;
+    --amarelo: #fdd20d;
+    --bg: #171717;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+button{
+    cursor: pointer;
+}
+
+html{
+    /* a cada 1rem será considera 10px */
+    font-size: 62.5%;
+    /*scroll-behavior: smooth;*/
+}
+
+body{
+    background-color: var(--bg-panel);
+    color: var(--color-text); 
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;    
+}
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}

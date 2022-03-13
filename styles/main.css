@@ -1,0 +1,287 @@
+@import "config.css";
+
+/*===============HEADER================*/
+
+header{
+    padding: 30px 0;
+    background-color: var(--bg);
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-batman{
+    width: 150px;
+}
+
+.navbar .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar .menu li a{
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.navbar .menu li a:hover{
+    color: var(--amarelo);
+    transition: 0.3s background-color;
+}
+
+.header .btn-batman{
+    background-color: var(--bg-panel);
+    border: 2px solid var(--amarelo);
+    padding: 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 600;
+    transition: 0.3s background-color;
+}
+
+.header .btn-batman:hover{
+    background-color: var(--amarelo);
+    color: var(--color-text);
+    transition: 0.3s background-color;
+}
+
+/*===============MAIN================*/
+
+main{
+    padding: 30px 0;
+}
+
+.main{
+    width: 100%;
+}
+
+.main hgroup{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main hgroup h1{
+    font-size: 6.0rem;
+    margin-bottom: 30px;
+}
+
+.main hgroup h2{
+    font-size: 4.5rem;
+}
+
+.main hgroup h2 span{
+    color: var(--amarelo);
+}
+
+.home{
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+    margin-top: 70px;   
+}
+
+.batman {
+    width: 650px;
+    animation: moveBatman 2s infinite alternate ease-in-out;
+}
+
+
+.login-box{
+    background: rgba(0,0,0,.5);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+.login-box .login-form{
+    padding: 30px;
+}
+
+.login-box .login-form .btn-enviar{
+    border: none;
+}
+
+.login-box h2{
+    text-align: center;
+    font-size: 3.0rem;
+    margin-bottom: 50px;
+}
+
+.login-box .user-box{
+    position: relative
+}
+
+.login-box .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color:#fff;
+    margin-bottom: 30px;
+    border:none;
+    border-bottom: 1px solid #fff;
+    outline:none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position:absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1.9rem;
+    color:#fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label{
+    top: -20px;
+    left:0;
+    color:#fdd20d;
+    font-size:12px
+}
+
+.login-box form a{
+    position:relative;
+    display:inline-block;
+    padding:10px 20px;
+    color:#fdd20d;
+    font-size: 1.9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+
+.login-box a:hover{
+    background-color:#fdd20d;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #fdd20d,
+                0 0 25px #fdd20d,
+                0 0 50px #fdd20d,
+                0 0 100px #fdd20d;
+}
+
+.login-box a span{
+    position: absolute;
+    display: block;
+}
+
+.login-box a span:nth-child(1) {
+    top:0;
+    left:-100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fdd20d);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+    50%, 100%{
+        left:100%
+    }
+}
+
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fdd20d);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+
+.login-box a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fdd20d);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right:-100%;
+    }
+    50%, 100%{
+        right:100%;
+    }
+}
+
+.login-box a span:nth-child(4){
+    bottom: -100%;
+    left:0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fdd20d);
+    animation: btd-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn-anim4{
+    0% {
+        bottom: -100%;
+    }
+    50%,100% {
+        bottom: 100%;
+    }
+}
+
+@keyframes moveBatman {
+    From {
+        transform: translate(-5%, -5%) rotate(5deg);
+    }
+}
+
+/*===============FOOTER================*/
+
+footer{
+    padding: 30px 0;
+    background-color: #2B4B6F;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .desenvolvedor h3{
+    font-size: 2.4rem;
+    order: 1;
+}
+
+.footer .desenvolvedor h3 a:hover{
+    color: var(--amarelo);
+}

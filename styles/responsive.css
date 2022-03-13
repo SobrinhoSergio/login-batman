@@ -1,0 +1,92 @@
+/*===============RESPONSIVE================*/
+
+@media (max-width: 1000px) {
+   
+    header{
+        
+    }
+
+    .header{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .navbar .menu{
+        gap: 35px;
+    }
+
+    .home{
+        grid-template-columns: 100%;
+    }
+
+    .login-box {
+        margin: 0 auto;
+    }
+    
+    .batman {
+        margin-top: 50px;
+    }
+
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer .desenvolvedor h3{
+        margin-bottom: 30px;
+    }
+    
+
+
+}
+
+@media (max-width: 700px) {
+   
+    header{
+        
+    }
+
+    .header{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .navbar .menu{
+        flex-direction: column;
+    }
+
+    .main hgroup h1{
+        font-size: 4.0rem;
+    }
+    
+    .main hgroup h2{
+        font-size: 3.0rem;
+    }
+
+    .batman {
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 500px) {
+   
+    header{
+        
+    }
+
+    .main hgroup h1{
+        font-size: 2.5rem;
+    }
+    
+    .main hgroup h2{
+        font-size: 2.0rem;
+    }
+
+    .footer .desenvolvedor h3{
+        font-size: 1.7rem;
+    }
+
+    
+
+}
